@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>sla q isso</title>
+    </head>
+    <body>
+        <h1>Eu odeio Java Script!</h1>
+        <script>
+/*
+            let nome = "Luana";
+            const idade = 16;
+            let cidade = "Cachoeiro de Itapemirim";
+            alert(" Me chamo " + nome + ", tenho " + idade + " anos e moro em " + cidade);
+
+            let hora = 6;
+
+            if (hora < 12) {
+                alert("Bom dia!")
+            } else if (hora < 18) {
+                alert("Boa tarde!")
+            } else {
+                alert("Boa noite!")
+            }
+
+            for (let i = 0; i < 5; i++){
+                alert(" Interação " + i);
+            }
+
+            let contador = 0;
+
+            while(contador < 5){
+                alert(" Contador: " + contador);
+                contador++;
+            }
+
+            function saudacao(nome){
+                return ("Boa tarde, " + nome + "!");
+            }
+            alert(saudacao("Raphaella"));
+*/
+            function calculaImc(altura, peso){
+                return Math.round(peso / (altura * altura));
+            }
+
+            function pulalinha(){
+                document.write("<br>")
+            }
+
+            function mostra(frase){
+                document.write(frase);
+                pulalinha();
+            }
+
+            var nome = prompt("Digite seu nome:");
+            var alturaInformada = prompt(nome + ", digite sua altura:");
+            var pesoInformado = prompt(nome + ", digite o seu peso:");
+
+            var imc = calculaImc(alturaInformada, pesoInformado);
+
+            mostra(nome + ", o seu Imc é: " + imc)
+
+            if (imc < 18.5){
+                mostra("Você está abaixo do recomendado!")
+            } else if(imc >= 18.8 && imc <= 35){
+                mostra("O seu IMC está excelente!")
+            } else {
+                mostra("Você está acima do recomendado!")
+            }
+
+
+
+
+
+        </script>
+    </body>
+</html>
